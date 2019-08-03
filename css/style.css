@@ -120,10 +120,11 @@
 		top: 0;
 		width: 100%;
 		z-index: 10000;
+		padding: 0 15px;
 		/* border-bottom: 1px solid #333333; */
 	}
 
-		#header h1 {
+		#header a.logo {
 			-moz-transition: opacity 0.2s ease;
 			-webkit-transition: opacity 0.2s ease;
 			-ms-transition: opacity 0.2s ease;
@@ -136,16 +137,30 @@
 			background: transparent;
 		}
 
-			#header h1 a {
-				border: 0;
-				display: block;
-				height: inherit;
-				line-height: inherit;
-				color: #FFFFFF;
-				font-weight: 500;
-				background: transparent;
-				font-size: 24px;
-			}
+		#header a.logo {
+			border: 0;
+			display: block;
+			height: inherit;
+			line-height: inherit;
+			color: #FFFFFF;
+			font-weight: 500;
+			background: transparent;
+			font-size: 24px;
+		}
+		#header ul {
+			float: right;
+			list-style: none;
+			padding: 0 15px;
+		}
+		#header ul li {
+			float: right;
+		}
+		#header ul li a {
+			color: #FFFFFF;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
 
 				@media screen and (max-width: 736px) {
 
@@ -691,4 +706,64 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #222222; 
+}
+
+
+/* team page */
+#header.alt,
+.team_page #header.alt
+{
+	background: #000000;
+}
+#header.alt h1,
+.team_page #header.alt h1
+{
+	opacity: 1;
+}
+.team_page section .container .content_wrap
+{
+	display: block;
+}
+.team_page .team_tile_wrap
+{
+	margin-bottom: 30px;
+}
+.team_tile_wrap .tile
+{
+	/* display: flex;
+	align-items: center; */
+	/* justify-content: center; */
+	text-align: center;
+    background: #222222;
+    padding: 45px 15px;
+}
+.team_tile_wrap .tile .image_wrap
+{
+	border-radius: 100px;    
+	overflow: hidden;
+	width: 200px;
+    height: 200px;
+    margin: 0 auto 15px auto;
+    float: none;
+	padding: 0;
+	max-width: 100%;
+    max-height: 100%;
+}
+.team_tile_wrap .tile .image_wrap img
+{
+	filter: url(data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id=… 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.team_tile_wrap .tile .text_wrap
+{
+	background: transparent;
+}
+.team_tile_wrap .tile .text_wrap h4
+{
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: 500;
+	background: transparent;
+	padding: 45px 15px 0 15px;
 }
