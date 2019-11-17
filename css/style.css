@@ -251,6 +251,41 @@
 				pointer-events: none;
 				opacity: 0;
 			}
+			#header ul li button
+			{
+				color: #FFFFFF;
+				font-size: 24px;
+				border: 0;
+				padding: 0;
+			}
+			#offcanvas_menu {
+				z-index: 99999;
+				background: #ffffff	;
+				/* width: 350px; */
+			}
+			#offcanvas_menu .uk-offcanvas-bar
+			{
+				/* display: flex;
+				align-items: center; */
+				padding: 60px 60px;
+			}
+			#offcanvas_menu ul,
+			#offcanvas_menu ul * {
+				background: transparent;
+			}
+			#offcanvas_menu ul
+			{
+				list-style: none;
+			}
+			#offcanvas_menu ul * {
+				float: left;
+				width: 100%;
+			}
+			#offcanvas_menu ul li a {
+				padding: 15px 0;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
 
 /* Banner */
 
@@ -766,4 +801,47 @@
 	font-weight: 500;
 	background: transparent;
 	padding: 45px 15px 0 15px;
+}
+
+/*Events page*/
+
+.events_page section#two
+{
+	background: #FFFFFF;
+	min-height: 500px;
+    padding: 45px 0;
+}
+
+.events_page section#two .container,
+.events_page section#two .container *
+{
+	background: #FFFFFF;
+}
+.events_page section#two .tile_wrap
+{
+	border-bottom: 1px solid #999999;
+	padding: 30px 0;
+}
+.events_page section#two .tile_wrap:last-of-type
+{
+	border-bottom: 0;
+}
+.events_page section#two .tile_wrap .tile
+{
+	padding: 0;
+}
+.events_page section#two .tile_wrap .tile h4
+{
+	font-size: 18px;
+    font-weight: 600;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+}
+.events_page section#two .tile_wrap .tile p
+{
+    margin-bottom: 10px;
+}
+.events_page section#two .tile_wrap .tile p strong
+{
+    font-weight: 600;
 }
