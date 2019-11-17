@@ -44,13 +44,17 @@
 	}
 	section .text_wrap h2
 	{
-		font-size: 32px;
+		font-size: 38px;
 		/* color: #ff7043; */
 		color: #00B0FF;
 		/* font-weight: 500; */
 		margin: 0 0 15px 0;
 		width: 100%;
 		float: left;
+		font-weight: 500;
+		letter-spacing: 6px;
+		color: #FFFFFF;
+		text-transform: uppercase;
 	}
 	section .text_wrap p
 	{
@@ -832,16 +836,73 @@
 }
 .events_page section#two .tile_wrap .tile h4
 {
+	font-size: 20px;
+    font-weight: 600;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.events_page section#two .tile_wrap .tile p
+{
+	margin-bottom: 10px;   
+	font-size: 18px;
+    line-height: 32px;
+}
+.events_page section#two .tile_wrap .tile p strong
+{
+    font-weight: 600;
+}
+
+/*CFP page*/
+.cfp_page section#two
+{
+	background: #FFFFFF;
+	min-height: 500px;
+    padding: 45px 0;
+}
+.cfp_page section#two .container,
+.cfp_page section#two .container *
+{
+	background: #FFFFFF;
+}
+
+.cfp_page section#two .tile_wrap
+{
+	border-bottom: 0;
+	padding: 0;
+}
+.cfp_page section#two h2
+{
+	font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+	letter-spacing: 1px;
+	margin: 30px 0 10px 0;
+	float: left;
+    width: 100%;
+}
+.cfp_page section#two .tile_wrap .tile h4
+{
 	font-size: 18px;
     font-weight: 600;
 	margin-bottom: 10px;
 	letter-spacing: 1px;
 }
-.events_page section#two .tile_wrap .tile p
+.cfp_page section#two .tile_wrap .tile p
 {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+    line-height: 32px;
 }
-.events_page section#two .tile_wrap .tile p strong
+.cfp_page section#two .tile_wrap .tile p strong
 {
     font-weight: 600;
+}
+.cfp_page section#two h6
+{
+	margin-bottom: 10px;
+	font-size: 18px;
+	line-height: 32px;
+	float: left;
+    width: 100%;
 }
