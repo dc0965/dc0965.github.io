@@ -64,7 +64,8 @@
 		width: 100%;
 		float: left;
 	}
-	section#one 
+	section#one,
+	section#four
 	{
 		text-align: center;
 		padding: 8% 0;
@@ -78,6 +79,21 @@
 	{
 		font-size: 14px;
 		margin-top: 15px;
+	}
+	ul.sponsors
+	{
+		list-style: none;
+		width: 100%;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	ul.sponsors li
+	{
+		width: auto;
+		float: left;
+		margin: 0 15px;
 	}
 	
 	@media screen and (max-width: 736px) {
